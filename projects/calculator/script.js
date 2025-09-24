@@ -5,7 +5,7 @@ const calc = new Calculator();
 
 function updateDisplay(value) {
     const display = document.querySelector('.calculator .display');
-    display.textContent = value;
+    display.textContent = value; // Change display content
 }
 
 function clearDisplay() {
@@ -42,6 +42,18 @@ function handleInput(value) {
         }
         updateDisplay(currentOperation);
     } 
+    else if (value === ".") {
+        // Split the currentOperation by operators to get the last number
+        const parts = currentOperation.split(/[\+\-\*\/]/);
+        const lastNumber = parts[parts.length - 1];
+        console.log(`Last number segment: ${lastNumber}`);
+        console.log("parts",parts);
+        // Only append "." if the last number doesn't already have a decimal
+        if (!lastNumber.includes(".")) {
+            currentOperation += value;
+            updateDisplay(currentOperation);
+        }
+    }
     else {
         // Append digits or decimal point
         currentOperation += value;
