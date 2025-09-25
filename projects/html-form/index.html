@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <div class="img-container">
+        <!-- Background image -->
+        <div class="back-img">
+          <img src="image.jpg" alt="background" />
+        </div>
+
+        <!-- Odin image with slight black background -->
+        <!-- Odin image with black band and text -->
+        <div class="odin-img">
+          <div class="odin-band">
+            <img src="odin-lined.png" alt="Odin Logo" />
+            <p class="odin-text">ODIN</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <div class="header">
+          <h1 class="header-1">
+            This is not a real service! You know you need something like this in
+            your life to help you realize your deepest dreams. Sign up now to
+            get started.
+          </h1>
+          <h2 class="header-2">You know you want to.</h2>
+        </div>
+
+        <form id="contact-form">
+          <div class="form-content">
+            <h3 class="form-header">Let's do this!</h3>
+
+            <div class="line">
+              <div>
+                <label for="fname">FIRST NAME</label>
+                <input id="fname" type="text" />
+              </div>
+              <div>
+                <label for="lname">LAST NAME</label>
+                <input id="lname" type="text" />
+              </div>
+            </div>
+
+            <div class="line">
+              <div>
+                <label for="phone_number">PHONE</label>
+                <input id="phone_number" type="tel" />
+              </div>
+              <div>
+                <label for="email">EMAIL</label>
+                <input id="email" type="email" />
+              </div>
+            </div>
+
+            <div class="line last">
+              <div>
+                <label for="password">PASSWORD</label>
+                <input id="password" type="password" />
+              </div>
+              <div>
+                <label for="confirm_password">COMFIRM PASSWORD</label>
+                <input id="confirm_password" type="password" />
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="signup-container">
+          <button class="signup" type="submit">Sign Up</button>
+        </div>
+
+        <div class="already-member">
+          <p>Already a member? <a href="#">Login</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+  </body>
+</html>
