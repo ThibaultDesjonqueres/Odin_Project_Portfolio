@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard-grid">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-content">
+        <h2>Admin</h2>
+        <div class ="nav top">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="logos/history_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="History">
+              History
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="logos/task_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Tasks">
+              Tasks
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="logos/communities_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Communities">
+              Communities
+            </a>
+          </li>
+        </ul>
+        <div class = "nav bottom">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="logos/settings_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Settings">
+              Settings
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="logos/contact_support_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Support">
+              Support
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="logos/privacy_tip_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Privacy">
+              Privacy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- HEADER -->
+    <header class="header">
+      <h1>Admin Dashboard</h1>
+      
+      <div class="header-right">
+        <!-- Search Bar -->
+        <div class="search-container">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">🔍</button>
+        </div>
+
+        <!-- User Info -->
+        <div class="user-info">Welcome, Admin</div>
+      </div>
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- PROJECTS -->
+      <section class="article">
+        <p>Your Projects</p>
+        <div class="cards">
+          <div>
+            <div>
+              <p class="title">Super Cool Project</p>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="card-icons">
+              <img src="icons/star-plus.svg" alt="" class="icon links">
+              <img src="icons/eye-plus-outline.svg" alt="" class="icon links">
+              <img src="icons/source-fork.svg" alt="" class="icon links">
+            </div>
+          </div>
+          <div>
+            <div>
+              <p class="title">Less Cool Project</p>
+              <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card-icons">
+              <img src="icons/star-plus.svg" alt="" class="icon links">
+              <img src="icons/eye-plus-outline.svg" alt="" class="icon links">
+              <img src="icons/source-fork.svg" alt="" class="icon links">
+            </div>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </section>
+
+      <!-- ANNOUNCEMENTS -->
+      <section class="announcement">
+        <p>Announcements</p>
+        <div class="terms">
+          <div>
+            <p class="title">Site Maintenance</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div>
+            <p class="title">Community Share Day</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div>
+            <p class="title">Updated Privacy Policy</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRENDING -->
+      <section class="trending">
+        <p>Trending</p>
+        <div class="follow">
+          <div class="people">
+            <img src="logos/user.svg" alt="">
+            <div>
+              <p class="title">@juicewrld</p>
+              <p class="text">Juice Wrld</p>
+            </div>
+          </div>
+          <div class="people">
+            <img src="logos/user.svg" alt="">
+            <div>
+              <p class="title">@peterparker</p>
+              <p class="text">Peter Parker</p>
+            </div>
+          </div>
+          <div class="people">
+            <img src="logos/user.svg" alt="">
+            <div>
+              <p class="title">@sarahkouture</p>
+              <p class="text">Sarah Kouture</p>
+            </div>
+          </div>
+          <div class="people">
+            <img src="logos/user.svg" alt="">
+            <div>
+              <p class="title">@tommysmith</p>
+              <p class="text">Tommy Smith</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      &copy; 2025 Admin Dashboard
+    </footer>
+
+  </div>
+</body>
+</html>
